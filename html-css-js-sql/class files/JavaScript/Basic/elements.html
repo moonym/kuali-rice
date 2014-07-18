@@ -1,0 +1,72 @@
+<html>
+<head>
+   <title>FormElements</title>
+			<!--The function reads values
+				and builds a Web page-->
+<SCRIPT language="JavaScript">
+function listFavs() {
+var favString = "<body text=\"lightskyblue\" bgcolor=\"maroon\">"
+favString += "<H1>Your Favorites</H1>"
+favString += "Your favorite color is "
+favString += (favorites.favColor.value + "<br><br>")
+favString += "Your favorite season is "
+favString += (favorites.favSeason.value + "<br><br>")
+favString += "Some of your favorite things are <br>"
+if (favorites.favThing1.checked)
+	favString += (favorites.favThing1.value + "<br>")
+if (favorites.favThing2.checked)
+	favString += (favorites.favThing2.value + "<br>")
+if (favorites.favThing3.checked)
+	favString += (favorites.favThing3.value + "<br>")
+if (favorites.favThing4.checked)
+	favString += (favorites.favThing4.value + "<br>")
+favString += "<br><H2>Hit Back to return to the Form Elements page.</H2>"
+document.write(favString)
+}
+</SCRIPT>
+
+</head>
+
+<body text="antiquewhite" bgcolor="darkblue">
+<H1>Form Elements</H1>
+
+			<!--The form starts here-->
+<FORM Name="favorites">
+			<!--The list box-->
+Select a favorite color: 
+<SELECT Name="favColor">
+<OPTION Value="Red">Red
+<OPTION Value="Orange">Orange
+<OPTION Value="Yellow">Yellow
+<OPTION Value="Green">Green
+<OPTION Value="Blue">Blue
+<OPTION Value="Indigo">Indigo
+<OPTION Value="Violet">Violet
+</SELECT>
+<br>
+<br>
+			<!--The radio buttons-->
+Your favorite season? 
+<INPUT Type="radio" Name="favSeason" Value="Spring" OnClick=favorites.favSeason.value="Spring">Spring
+<INPUT Type="radio" Name="favSeason" Value="Summer" OnClick=favorites.favSeason.value="Summer">Summer
+<INPUT Type="radio" Name="favSeason" Value="Fall" OnClick=favorites.favSeason.value="Fall">Fall
+<INPUT Type="radio" Name="favSeason" Value="Winter" OnClick=favorites.favSeason.value="Winter">Winter
+<br>
+<br>
+			<!--The check boxes-->
+And which of these are your favorite things? <br>
+<INPUT Type="checkbox" Name="favThing1" Value="Raindrops on roses">Raindrops on roses 
+<INPUT Type="checkbox" Name="favThing2" Value="Whiskers on kittens">Whiskers on kittens
+<br>
+<INPUT Type="checkbox" Name="favThing3" Value="Bright copper kettles">Bright copper kettles
+<INPUT Type="checkbox" Name="favThing4" Value="Warm woolen mittens">Warm woolen mittens
+<br><br>
+			<!--The Vote and Clear buttons-->
+<INPUT Type="button" Value="  Vote!  " OnClick="listFavs()">
+<INPUT Type="reset" Value="Clear">
+</FORM>
+
+
+
+</body>
+</html>

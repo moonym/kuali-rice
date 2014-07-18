@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+<figure>
+<a href="#"><img src="logo.gif" width="240" height="60" alt="Citizens Information Center" /></a></figure></header>
+<section>
+<nav>
+<ul id="topnav">
+<li><a id="topnav01" href="home.html" title="Home" ></a></li>
+<li><a id="topnav02" href="registration.html" title="Information Center" ></a></li>
+<li><a id="topnav03" href="newsroom.html" title="News Room" ></a></li>
+<li><a id="topnav04" href="contactus.html" title="Contact Us" ></a></li></ul>
+</nav>
+<figure id="mainimage"><img src="main_contactus.jpg" width="651" height="165" alt="Logo Citizens Information Center" /></figure>
+<article>
+
+	<fieldset>
+		<legend>Contact Us</legend>
+        <form  action="process_feedback.php" method="post">
+        <table width="100%">
+        	<tr>
+            	<td width="50%">
+                <label for="name">*Name:</label>
+                </td>
+                <td width="50%">
+                <input  type="text" id="name" name="name" required/>
+                </td>
+            </tr>
+            <tr>
+            	<td width="50%">
+                	<label for="sex">*Gender:</label>
+                </td>
+                <td width="50%">
+                    	<input class="radio"type="radio" name="sex" value="male">Male
+                        <input class="radio"type="radio" name="sex" value="female">Female
+                </td>
+            </tr>
+            <tr>
+            	<td width="50%">
+                	<label for="email">*E-mail</label>
+                </td>
+                <td width="50%">
+                	<input type="email"name="email"id="email" required>
+                </td>
+            </tr>
+            <tr>
+            	<td width="50%">
+                	<label for="age">Age</label>
+                </td>
+                <td width="50%">
+                	<select>
+                    	<option value="blank">Select One</option>
+                        <optgroup label="Child">
+                        	<option value="zerosix">0-6</option>
+                            <option value="seventwelve">7-12</option>
+                            <option value="thirteenfifteen">13-15</option>
+                        </optgroup>
+                        <optgroup label="Adult">
+                        	<option value="sixteentwenty">16-20</option>
+                            <option value="twentyonetwentyfive">21-25</option>
+                            <option value="twentyfiveup">25 and above</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            	<td width="50%">
+                	<p>I would like to register for:</p>
+                </td>
+                <td width="50%">
+                	<p>Please Check all that Apply
+                </td>
+            </tr>
+           <tr>
+           	<td width="25%">
+            </td>
+            <td width="75%">
+            	<input type="checkbox"name="EmailUpdate" value="EmailUpdate"/><p style="paddin:0;margin:0 auto;display:inline">I would like to receive updates by Email</p>
+            </td>
+           </tr>
+           <tr>
+           	<td width="25%">
+            </td>
+            <td width="75%">
+            	<input type="checkbox"name="EmailNotify" value="EmailNotify"/><p style="paddin:0;margin:0 auto;display:inline">Please notify me of new updates</p>
+            </td>
+           </tr>
+           <tr>
+           	<td colspan="2">
+           		<p>Thank you for registering with us. Please help us to improve by providing your comments/suggestions in the space below.</p>
+             </td>
+           </tr>
+           <tr>
+           	<td colspan="2" width="100%">
+           		<textarea width="100%" name="comments" id="comment" rows="6" cols="30" style="resize:none;">Pls typ</textarea>
+             </td>
+           </tr>
+
+        </table>
+        
+        <input type="submit" value="Submit" class="submit">
+        <input type="reset" value="Reset" class="reset">
+         </form>
+	</fieldset>
+
+</article>
+</section>
+<footer>
+<nav>
+<a href="careers.html">Careers</a>|<a href="copyright.html">Trademark and Copyright</a>|<a href="privacy.html">Privacy Policy</a>|<a href="terms.html">Terms and Condition</a>
+</nav>
+</footer>
+</body>
+</html>

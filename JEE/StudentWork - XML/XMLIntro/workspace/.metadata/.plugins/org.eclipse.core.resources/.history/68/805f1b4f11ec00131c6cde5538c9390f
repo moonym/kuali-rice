@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='customer.xsl' ?>
+<order ID='67183625' dateTime='2001-10-03 09:50'>
+	<customer>
+		<name>Leanne Ross</name>
+		<street>1475 Cedar Avenue</street>
+		<city>Fargo</city>
+		<state>ND</state>
+		<zipcode>58103</zipcode>
+		<shipper name='FedEx' accountNum='893-192'/>
+	</customer>
+	<item ID='CD509'>
+		<name>Surfacing</name>
+		<artist>Sarah McLachlin</artist>
+		<releaseDate>1997-12-04</releaseDate>
+		<listPrice>17.97</listPrice>
+		<price>13.99</price>
+	</item>
+</order>

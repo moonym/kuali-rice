@@ -1,0 +1,30 @@
+<html>
+<head>
+   <title>Math</title>
+
+<!--Add function here-->
+<SCRIPT language="JavaScript">
+//Enter code here
+function findArea(radius){
+	radius = parseFloat(radius);
+	var circArea = Math.PI * (Math.pow(radius,2));
+	alert("Area is " + circArea);
+	
+}
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#66AAAA">
+<H1>The Math Object</H1>
+
+<FORM>
+<br>
+Enter the radius of a circle: 
+<INPUT Type="text" Size=10 Name="theRadius">
+<br><br>
+<INPUT Type="button" Value="Find the Area" OnClick="findArea(theRadius.value)">
+</FORM>
+
+</body>
+</html>

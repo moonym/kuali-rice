@@ -1,0 +1,97 @@
+/*
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitablity for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright 2006-9 LearningPatterns Inc.
+ */
+
+package com.javatunes.util;
+
+import java.util.Collection;
+import java.sql.Connection;
+import javax.sql.*;
+
+public class SearchUtilityDB {
+   public static MusicItem findById(DataSource ds, Long id)
+   {
+      // declare return value
+      MusicItem result = null;
+
+      // declare connection and DAO
+      Connection conn = null;
+      ItemDAO dao = null;
+      
+      try
+      {
+         // do query
+         // Get connection from DataSource
+         conn = ds.getConnection();
+         dao = new ItemDAO(conn);
+         result = dao.searchById(id);
+      }
+      catch (Exception e)
+      {
+         System.out.println(e);         
+      }
+      finally
+      {
+         try
+         {
+            // close DAO and connection to release db resources
+            if (dao != null)  { dao.close();  }
+            if (conn != null) { conn.close(); }
+         }
+         catch (Exception ignored) { }
+      }
+      
+      // return the result
+      return result;
+   }
+ 
+   // searches catalog by String ID
+   public static MusicItem findById(DataSource ds, String id)
+   {
+      Long idLong = Long.decode(id);
+      return findById(ds, idLong);
+   }
+   
+   public static Collection<MusicItem> findByKeyword(DataSource ds, String keyword)
+   {
+      // declare return value
+      Collection<MusicItem> results = null;
+      
+      // declare connection and DAO
+      Connection conn = ds.getConnection();
+      ItemDAO dao = null;
+      
+      try
+      {
+         // do query
+         // TODO - Get connection from DataSource
+         conn = null;
+         dao = new ItemDAO(conn);
+         System.out.println("SearchUtilityDB findByKeyword() about to search for:" +keyword);
+         results = dao.searchByKeyword(keyword);
+      }
+      catch (Exception e)
+      {
+         System.out.println("SearchUtilityDB says, problem: " + e);
+      }
+      finally
+      {
+         try
+         {
+            // close DAO and connection to release db resources
+            if (dao != null)  { dao.close();  }
+            if (conn != null) { conn.close(); }
+         }
+         catch (Exception ignored) { }
+      }
+      
+      // return the search results
+      return results;
+   }
+  
+}

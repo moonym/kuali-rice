@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Lab03.1/orderns.xml&apos; to &apos;ordernsA.xml&apos;" description="Rename resource &apos;orderns.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="orderns.xml" name="ordernsA.xml" stamp="1401907833777" updateReferences="true"/>
+</session>

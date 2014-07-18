@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+	<TITLE>ETAL, LLP</TITLE>
+
+<STYLE TYPE="text/css">
+
+<!--
+
+H1   { font-size: 22pt; 
+       text-decoration: underline; 
+       font-family: garamond, serif }
+
+.address { 
+
+       font-size: 9pt; 
+       margin-top: -15px; 
+       font-family: garamond, serif }
+
+.logo { 
+
+       position: absolute; 
+       left: 400px; 
+       top: 0px }
+
+
+#one { 
+
+       width: 360px; 
+       border: 1px;
+       background-color: #99CC99; 
+       position: absolute; 
+       top: 100px;
+       z-index: 1 }  
+       /* green division */
+
+#two { width: 360px; 
+       border: 1px;
+       background-color: #FFFFCC;
+       position: absolute; 
+       top: 100px;
+       z-index: 2 } 
+       /* yellow division */
+
+#three { width: 360px; 
+       color: white; 
+       border: 1px;
+       background-color: #006699; 
+       position: absolute; 
+       top: 100px;
+       z-index: 3 }  
+       /* blue division */
+
+
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+// array holds three values which will be used as the z-index value
+var order = new Array(1, 2, 3);
+
+// determine which browser is in use
+if(document.layers)
+  {
+  // browser is Navigator 4.x+
+  var isNav4 = true;
+  }
+else
+  {
+  // assume browser is IE4+
+  var isIE4 = true;
+  }
+
+function flip()
+  {
+  // the main function that does the order flipping
+  if(isNav4)
+    {
+    // steps to do if user is running Navigator
+    // simply set the z-index for each object to the value of
+    // one of the values of the array
+    document.layers['one'].zIndex = order[0];
+    document.layers['two'].zIndex = order[1];
+    document.layers['three'].zIndex = order[2];
+
+    // increment the values of the array
+    order[0] += 1;
+    order[1] += 1;
+    order[2] += 1;
+  
+    // make the array "loop" by resetting value to 1 if over 3
+    if(order[0] > 3) order[0] = 1;
+    if(order[1] > 3) order[1] = 1;
+    if(order[2] > 3) order[2] = 1;
+    }
+  else if(isIE4)
+    {
+    // do same for IE -- just need different object syntax
+    document.all['one'].style.zIndex = order[0];
+    document.all['two'].style.zIndex = order[1];
+    document.all['three'].style.zIndex = order[2];
+    order[0] += 1;
+    order[1] += 1;
+    order[2] += 1;
+  
+    if(order[0] > 3) order[0] = 1;
+    if(order[1] > 3) order[1] = 1;
+    if(order[2] > 3) order[2] = 1;
+    }
+  else
+    {
+    // not using either Nav4 or IE4 so do nothing
+    }    
+
+  id = setTimeout("flip()", 2000);
+  }
+
+
+// -->
+</SCRIPT>
+</HEAD>
+
+<BODY onLoad="flip();">
+
+<DIV CLASS="logo">
+<IMG SRC="etal.gif">
+</DIV>
+
+<H1> Ellis, Taylor, Allen & Lane </H1>
+
+<P CLASS="address">1000 Subpoenas Blvd. New York, NY 12345</P>
+
+<DIV ID=three>Ellis, Taylor, Allen & Lane is a partnership of more than 100 associates specializing in Intellectual Property, Copyright, and the representation of high-tech companies. 
+</DIV>
+
+<BR>
+
+<DIV ID=two>Our associates are committed to providing the finest counsel available. Our clients are matched with teams of specialists dedicated to providing sound legal solutions. 
+
+</DIV>
+
+<BR>
+
+<DIV ID=one>Our clients are public and private companies, from a variety of industries. Ellis Taylor has been in practice since 1966, and we proudly boast a 92% success rate. 
+</DIV>
+
+</BODY>
+</HTML>

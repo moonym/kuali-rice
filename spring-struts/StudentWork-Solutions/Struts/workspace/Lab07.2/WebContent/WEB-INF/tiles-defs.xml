@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+  "-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN" 
+  "http://struts.apache.org/dtds/tiles-config_1_3.dtd"> 
+  
+<tiles-definitions>
+
+   <!-- TODO:  add in definition -->
+    <definition name="main.layout" path="/jsp/layout.jsp">
+        <put name="title" value="JavaTunes Online Music" type="string" />
+        <put name="header" value="/jsp/header.jsp" />
+        <put name="body"   value="/jsp/defaultBodyContent.jsp" />
+    </definition>   
+    
+    <!-- Optional part: extending a definition -->
+    <definition name="eTunes.layout" extends="main.layout">
+	    <!-- Override the title -->
+        <put name="title"  value="eTunes Online Music" type="string"/>
+	    <!-- Override the body: Need to create eTunesHeader.jsp -->
+	    <put name="header"  value="/jsp/eTunesHeader.jsp" />
+    </definition>     
+ 
+</tiles-definitions>
+  

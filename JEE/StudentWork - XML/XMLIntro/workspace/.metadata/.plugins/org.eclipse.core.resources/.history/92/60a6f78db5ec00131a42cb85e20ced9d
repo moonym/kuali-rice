@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="order.xsd">order</order>
+
+<order>
+<customer>
+<name>Susan Phillips</name>
+<street>763 Rodeo Circle</street>
+<apt>1A</apt>
+<city>San Francisco</city>
+<state>CA</state>
+<zipcode>94109</zipcode>
+<shipper/>
+</customer>
+</order>

@@ -1,0 +1,46 @@
+<html>
+<head>
+   <title>Conditionals</title>
+
+<SCRIPT language = "JavaScript">
+function getDiscount(widgetCount){
+	var alertString = "No working code yet!";
+	//Enter conditional statements
+	
+	alert(alertString);
+	
+	if(widgetCount > 0){
+		if((widgetCount>=10)&&(widgetCount<100)){
+			alertString = "You get a 10% discount";	
+		}
+		else if(widgetCount>=100){
+			alertString = "You get a 15% discount";	
+		}	
+		else{
+			alertString = "No discount for you!";	
+		}
+	}
+	else{
+		alertString = "Please enter a valid number";
+	}
+	
+}
+</SCRIPT>
+
+</head>
+
+<body text="#FFFFFF" bgcolor="#336622">
+
+<H1>A Test of Conditionals</H1>
+<br>
+
+<FORM>
+Enter the number of Widgets you wish to order: 
+<INPUT Type="text" name="howMany" size=10>
+<br>
+<br>
+<INPUT Type="button" Value="Get Discount" OnClick="getDiscount(howMany.value)">
+</FORM>
+
+</body>
+</html>

@@ -1,0 +1,1584 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./Quick%20Reference_files/filelist.xml">
+<title>Cascading Style sheet (CSS-1) Properties </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Brandon Heffernan</o:Author>
+  <o:LastAuthor>Hap Hazard</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>16</o:TotalTime>
+  <o:LastPrinted>1601-01-01T00:00:00Z</o:LastPrinted>
+  <o:Created>1999-07-19T15:03:00Z</o:Created>
+  <o:LastSaved>1999-07-19T15:03:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>733</o:Words>
+  <o:Characters>4182</o:Characters>
+  <o:Company>LOGICAL OPERATIONS</o:Company>
+  <o:Bytes>39936</o:Bytes>
+  <o:Lines>34</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>5135</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>6 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:UsePrinterMetrics/>
+   <w:WW6BorderRules/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:AutoSpaceLikeWord95/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Roman 10cpi";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Roman 10cpi";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.8in .8in .8in .8in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<div style='border:none;border-bottom:solid windowtext .75pt;padding:0in 0in 2.0pt 0in'>
+
+<p class=MsoNormal style='border:none;mso-border-bottom-alt:solid windowtext .75pt;
+padding:0in;mso-padding-alt:0in 0in 2.0pt 0in'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:
+Verdana'>Quick Reference: CSS-1 Properties <o:p></o:p></span></b></p>
+
+</div>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'>*
+Indicates the property can be inherited.</span></b><span style='font-size:9.0pt;
+mso-bidi-font-size:10.0pt;font-family:Verdana'> <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+font-family:Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 width=690 style='width:517.6pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext 1.5pt;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='height:7.45pt'>
+  <td width=690 colspan=3 valign=top style='width:517.6pt;border:solid windowtext 1.5pt;
+  border-bottom:solid windowtext .75pt;padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal align=center style='text-align:center;background:#F2F2F2;
+  mso-shading:windowtext;mso-pattern:gray-5 auto'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:
+  Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;background:#F2F2F2;
+  mso-shading:windowtext;mso-pattern:gray-5 auto'><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+  Verdana'>Font properties</span></b><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;background:#F2F2F2;
+  mso-shading:windowtext;mso-pattern:gray-5 auto'><![if !supportEmptyParas]>&nbsp;<![endif]><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'>Property</span></b><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><o:p></o:p></span></b></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'>Description</span></b><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><o:p></o:p></span></b></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'>Values/units
+  of measurement</span></b><b style='mso-bidi-font-weight:normal'><span
+  style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>font-family *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Declares a specific font or font family<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Font name, or generic family name, such as <i
+  style='mso-bidi-font-style:normal'>serif</i> or <i style='mso-bidi-font-style:
+  normal'>sans-serif</i><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>font-size *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the font size, in either absolute or relative value<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Absolute size (pt, px, pc), [<i style='mso-bidi-font-style:
+  normal'>length</i>] (ex, em), relative or absolute keywords, [<i
+  style='mso-bidi-font-style:normal'>percentage</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>font-style *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Declares either italic or normal text<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>normal, italic<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>font-weight *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Makes a font heavier or lighter<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>normal, bold, lighter, bolder, 100, 200, 300, 400, 500,
+  600, 700, 800, 900<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>font-variant *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Creates small caps<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>normal, small-caps<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=690 colspan=3 valign=top style='width:517.6pt;border-top:none;
+  border-left:solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .75pt;
+  background:#F2F2F2;mso-shading:windowtext;mso-pattern:gray-5 auto;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'>Text properties</span></b><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:
+  Verdana'><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>text-decoration *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Creates text effects<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>underline, line-through, overline, blink, none<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>text-align *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets horizontal alignment of text<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>left, right, center, justify<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>text-indent *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the first line indentation<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>] or [<i
+  style='mso-bidi-font-style:normal'>percentage</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>text-transform *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Changes the casing of letters, capitalizes first letter
+  of each word<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>capitalize, uppercase, lowercase, none<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>letter-spacing *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Adjusts the kerning of letters<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>normal, [<i style='mso-bidi-font-style:normal'>length</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Word-spacing *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Adjusts the spacing between words<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Normal, [length]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>line-height *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Adjusts the leading of text<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>integer</i>], [<i
+  style='mso-bidi-font-style:normal'>length</i>], or [<i style='mso-bidi-font-style:
+  normal'>percentage</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=690 colspan=3 valign=top style='width:517.6pt;border-top:none;
+  border-left:solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .75pt;
+  background:#F2F2F2;mso-shading:windowtext;mso-pattern:gray-5 auto;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'>Box properties</span></b><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:
+  Verdana'><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>margin-top<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the top margin size<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>margin-right<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the right margin size<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>margin-bottom<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the bottom margin size<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>margin-left<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the left margin size<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Margin<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>The margin shorthand property<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>padding-top<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the top padding size of an element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>padding-right<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the right padding size of an element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>padding-bottom<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the bottom padding size of an element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>padding-left<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the left padding size of an element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Padding<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>The padding shorthand property<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-color<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the color of a border<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>color name</i>]
+  or [<i style='mso-bidi-font-style:normal'>Hex / RGB value]</i><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-style<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the style of a border<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>none, dotted, dashed, solid, double, ridge, groove,
+  inset, outset<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-left<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the left border of an element (IE)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>color</i>], [<i
+  style='mso-bidi-font-style:normal'>style</i>], [<i style='mso-bidi-font-style:
+  normal'>width</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-right<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the right border (IE)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>color</i>], [<i
+  style='mso-bidi-font-style:normal'>style</i>], [<i style='mso-bidi-font-style:
+  normal'>width</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-top<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the top border (IE)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>color</i>], [<i
+  style='mso-bidi-font-style:normal'>style</i>], [<i style='mso-bidi-font-style:
+  normal'>width</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-bottom<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the bottom border (IE)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>color</i>], [<i
+  style='mso-bidi-font-style:normal'>style</i>], [<i style='mso-bidi-font-style:
+  normal'>width</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-left-width<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the left border width (NN)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>],
+  thin, medium, thick<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-right-width<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the right border width (NN)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>],
+  thin, medium, thick<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-top-width<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the top border width (NN)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>],
+  thin, medium, thick<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:7.45pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>border-bottom-width<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the bottom border width (NN)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:7.45pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>],
+  thin, medium, thick<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Border<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>The border shorthand property<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>all border values<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Width<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the width of an image or block-level element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:21.7pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:21.7pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Height<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:21.7pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the height of an image or block-level element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:21.7pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Float<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Flows text around an element, usually an image.<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>left, right, none<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Clear<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Determines if an element allows floating elements to
+  wrap on either side<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>left, right, both, none<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:35.85pt'>
+  <td width=690 colspan=3 valign=top style='width:517.6pt;border-top:none;
+  border-left:solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .75pt;
+  background:#F2F2F2;mso-shading:windowtext;mso-pattern:gray-5 auto;padding:
+  0in 5.4pt 0in 5.4pt;height:35.85pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'>Color and background properties</span></b><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>color *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets color for an element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>color name</i>]
+  or [<i style='mso-bidi-font-style:normal'>Hex / RGB value</i>]<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>background-color<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets the background color for an element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>color name</i>]
+  or [<i style='mso-bidi-font-style:normal'>Hex / RGB value</i>], transparent<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>background-image<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Sets an image as the background<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>URL (<i style='mso-bidi-font-style:normal'>relative or
+  absolute path</i>), none<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:10.4pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:10.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>background-repeat<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:10.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls how an image is tiled on screen<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:10.4pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>repeat, repeat-x, repeat-y, no-repeat<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>background-attachment<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Determines if a background image scrolls with page
+  content or is fixed in position<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>scroll, fixed<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'>background-position<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>positions background images applied to a particular
+  element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>],
+  keywords, percentage values<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:41.5pt'>
+  <td width=690 colspan=3 valign=top style='width:517.6pt;border-top:none;
+  border-left:solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .75pt;
+  background:#F2F2F2;mso-shading:windowtext;mso-pattern:gray-5 auto;padding:
+  0in 5.4pt 0in 5.4pt;height:41.5pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'><br>
+  Positioning properties<br style='mso-special-character:line-break'>
+  <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+  <![endif]></span></b><span style='font-size:11.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>position<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls an element’s position<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>absolute, relative, static<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>left<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Used with position, controls the left coordinate of a
+  positioned element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>top<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Used with position, controls the top coordinate of a
+  positioned element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>length</i>], [<i
+  style='mso-bidi-font-style:normal'>percentage</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:21.7pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:21.7pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>clip<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:21.7pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls which part of an element is visible, and which
+  part is clipped<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:21.7pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>shape-with 4
+  coordinate length values</i>], auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:33.95pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:33.95pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>overflow<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:33.95pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls the display of an element whose content exceeds
+  the size of its height and width<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:33.95pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>none, clip, scroll<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>z-index<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls the stacking order of overlapping elements<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>[<i style='mso-bidi-font-style:normal'>integer</i>],
+  auto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>visibility<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls the visibility of an element<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>inherit, visible, hidden<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:35.85pt'>
+  <td width=690 colspan=3 valign=top style='width:517.6pt;border-top:none;
+  border-left:solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;
+  border-right:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext .75pt;
+  background:#F2F2F2;mso-shading:windowtext;mso-pattern:gray-5 auto;padding:
+  0in 5.4pt 0in 5.4pt;height:35.85pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+  <p class=MsoNormal align=center style='text-align:center'><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;mso-bidi-font-size:
+  10.0pt;font-family:Verdana'>Classification properties</span></b><span
+  style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>display<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls an element’s display type<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>block, inline, list-item, none<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:11.35pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>white-space<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls how white space is treated (NN)<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:11.35pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>normal, nowrap, pre<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:33.95pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:33.95pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>list-style-type *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:33.95pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Controls the button or character type of a list item<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:33.95pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>circle, square, decimal, disc, lower-roman, upper-roman,
+  lower-alpha, upper-alpha, none<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext .75pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>list-style-image *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Inserts an image to be used as a button for list items<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .75pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal style='tab-stops:center 94.65pt'><span style='font-size:
+  9.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'>[<i style='mso-bidi-font-style:
+  normal'>URL</i>], none<span style='mso-tab-count:1'>             </span><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:22.6pt'>
+  <td width=148 valign=top style='width:111.05pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;border-right:
+  solid windowtext .75pt;mso-border-top-alt:solid windowtext .75pt;padding:
+  0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>List-style-position *<o:p></o:p></span></p>
+  </td>
+  <td width=275 valign=top style='width:206.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext .75pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal><span style='font-size:9.0pt;mso-bidi-font-size:10.0pt;
+  font-family:Verdana'>Determines whether the list label is displayed inside or
+  outside of the list box<o:p></o:p></span></p>
+  </td>
+  <td width=267 valign=top style='width:200.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  mso-border-top-alt:solid windowtext .75pt;mso-border-left-alt:solid windowtext .75pt;
+  padding:0in 5.4pt 0in 5.4pt;height:22.6pt'>
+  <p class=MsoNormal style='tab-stops:center 94.65pt'><span style='font-size:
+  9.0pt;mso-bidi-font-size:10.0pt;font-family:Verdana'>Inside, outside<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

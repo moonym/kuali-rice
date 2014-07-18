@@ -1,0 +1,39 @@
+/*
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitablity for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright 2006-7 LearningPatterns Inc.
+ */
+
+package com.javatunes.jdbc;
+
+import java.sql.*;
+import java.util.Collection;
+
+import java.math.BigDecimal;
+
+import com.javatunes.util.MusicItem;
+
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
+import org.springframework.jdbc.core.RowMapper;
+
+// TODO extend the JdbcDaoSupport class
+public class JdbcMusicItemDAO extends JdbcDaoSupport implements MusicItemDAO
+{
+
+      private static final String INSERT = "INSERT INTO Item (NUM, Title, Artist, ReleaseDate, ListPrice, Price) VALUES (?, ?, ?, ?, ?, ?)";
+
+	  private static final String SELECT_ALL_PROPS = "SELECT ITEM_ID, NUM, Title, Artist, ReleaseDate, ListPrice, Price FROM Item ";
+	  
+      private static final String FIND_BY_KEYWORD = SELECT_ALL_PROPS + " WHERE Title LIKE ? OR Artist LIKE ?";      
+	  
+      private static final String FIND_BY_ID = SELECT_ALL_PROPS + " WHERE ITEM_ID = ?";   
+   
+	private static final class MIRowMapper implements RowMapper {
+		public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+	         return null;
+     }
+   }
+}

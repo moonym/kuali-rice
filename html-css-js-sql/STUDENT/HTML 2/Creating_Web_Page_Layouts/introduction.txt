@@ -1,0 +1,13 @@
+<h1>Welcome to Everything for Coffee</h1>
+ <p class="s1">Make the perfect cup of coffee with heavenly aroma and exceptional flavor. For all you coffee lovers, we bring your favorite blends to your doorstep from specialty roasters all over the world.<br/><br/>
+The flavor of coffee highly depends on the environmental conditions where it is grown, so we carefully select high-quality beans from the richest coffee-growing areas of the world.
+</p>
+
+<br/>
+<h1>History of Coffee</h1>
+<p class="s2">
+The origin of coffee dates back to 600 A.D. There are several legends about the origin of coffee, one of which states that in Eastern Africa, a shepherd called Kaldi observed that his goats were overactive when they ate cherry-red berries from a shrub. He tried to eat some of the berries, and found himself invigorated too. Soon, news spread about the stimulating effects of these berries, and monks started using the berries to stay awake during their long hours of prayer.
+<br/>
+<br/>
+From Eastern Africa, coffee was transported to Arabia and then to Turkey, where they roasted the beans and boiled them and gave rise to a crude form of coffee that we use today. Soon, coffee  spread to Europe, America, and other  continents, and now it is one of the most popular beverages enjoyed by multitudes of people all over the world.
+</p>

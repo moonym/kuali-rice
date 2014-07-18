@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name='simple' type='xsd:string'/>
+	<xsd:element name='counter' type="xsd:int"/>
+	<xsd:element name='date' type="xsd:date"/>
+</xsd:schema>

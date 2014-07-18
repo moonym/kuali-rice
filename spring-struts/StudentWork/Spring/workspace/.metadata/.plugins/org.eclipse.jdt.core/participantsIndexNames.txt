@@ -1,0 +1,13 @@
+INDEX VERSION 1.126
+C:\StudentWork\Spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2296488861.index
+\Campus_Traffic [Struts_v3]\src
+C:\StudentWork\Spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\119772727.index
+\Campus_Traffic [Struts_v3]\src
+C:\StudentWork\Spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1932477353.index
+\Campus_Traffic [Struts_v3.1]\src
+C:\StudentWork\Spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\184850586.index
+\Campus_Traffic [Struts_v3.1]\src
+C:\StudentWork\Spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2469928954.index
+\Campus_Traffic [Struts_v3]\src
+C:\StudentWork\Spring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2669613399.index
+\Campus_Traffic [Struts_v3.1]\src

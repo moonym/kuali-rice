@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+<hibernate-configuration>
+
+   <!-- a SessionFactory instance -->
+   <session-factory>
+
+      <!-- properties -->
+      <property name="hibernate.connection.username">guest</property>
+      <property name="hibernate.connection.password">password</property>
+      <property name="hibernate.connection.url">jdbc:derby://localhost:1527/JavaTunesDB</property>
+      <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
+      <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+      <property name="hibernate.connection.pool_size">1</property>
+      
+      <!-- Disable the second-level cache  -->
+      <property name="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+      <!-- Echo all executed SQL to stdout -->
+      <property name="hibernate.show_sql">true</property>     
+
+      <!-- mapping files -->
+      <mapping resource="com/javatunes/persist/MusicItem.hbm.xml"/>
+
+   </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,33 @@
+<html>
+<head>
+   <title>onSubmit</title>
+
+<SCRIPT language = "JavaScript">
+function validate() {
+	if(userInfo.email.value.length < 1){
+		alert("Please enter your email address");
+	} else if (userInfo.email.value.indexOf("@")<0){
+		alert("Please enter a valid email address");
+	} else if (userInfo.email.value.indexOf(".")<0){
+		alert("Please enter a valid email address");
+	} else alert("Thank you for signing up!");
+}
+</SCRIPT>
+
+</head>
+
+<body text="#FFFFFF" bgcolor="#886688">
+
+<H1>The onSubmit() Event</H1>
+<br>
+
+<FORM Name="userInfo" onSubmit="validate()">
+Please provide your email address<br>to sign up for the mailing list:
+<br><INPUT Type="text" name="email" size=25>
+<br><br><INPUT Type="submit" Value="Sign Up">
+ <INPUT Type="reset" Value=" Clear ">
+</FORM>
+
+</body>
+
+</html>

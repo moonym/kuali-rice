@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="order" type="orderType"/>
+	<xsd:complexType name="orderType">
+		<xsd:sequence>
+			<xsd:element name="customer" type="customerType"/>
+			<xsd:element name="item" type="itemType" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name='ID' type='xsd:ID' use='required'/>
+		<xsd:attribute name='dateTime' type='xsd:dateTime' use='required'/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="customerType">
+		<xsd:sequence>
+			<xsd:element name='name' type="xsd:string"/>
+			<xsd:element name='street' type="xsd:string"/>
+			<xsd:element name='apt' type="xsd:string" minOccurs="0"/>
+			<xsd:element name='city' type="xsd:string"/>
+			<xsd:choice>
+				<xsd:sequence>
+					<xsd:element name='state' type='xsd:string'/>
+					<xsd:element name='zipcode' type='xsd:string'/>
+				</xsd:sequence>
+				<xsd:sequence>
+					<xsd:element name='province' type='xsd:string'/>
+					<xsd:element name='pcode' type='xsd:string'/>
+				</xsd:sequence>
+			</xsd:choice>
+			<xsd:element name='shipper'>
+				<xsd:complexType>
+					<xsd:attribute name='name' type='xsd:string' default='USMail'/>
+					<xsd:attribute name='accountNum' type='xsd:string' use='optional'/>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name='itemType'>
+		<xsd:sequence>
+			<xsd:element name='name' type='xsd:string'/>
+			<xsd:element name='artist' type='xsd:string' maxOccurs='unbounded'/>
+			<xsd:element name='releaseDate' type='xsd:date'/>
+			<xsd:element name='listPrice' type='xsd:decimal'/>
+			<xsd:element name='price' type='xsd:decimal' default='9.99'/>
+		</xsd:sequence>
+		<xsd:attribute name='ID' type="xsd:ID" use='required'/>
+		<xsd:attribute name='type' type='xsd:string' default='CD'/>
+	</xsd:complexType>
+
+</xsd:schema>

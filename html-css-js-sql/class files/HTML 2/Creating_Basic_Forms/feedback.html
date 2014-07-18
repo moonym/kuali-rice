@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" type="text/css" href="efc_styles.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="efc_formstyles.css" media="screen" />
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Feedback | Everything for Coffee</title>
+</head>
+<body>
+<header>
+<nav>
+  <ul id="efcnavsprite">
+  <li><a id="topnav1" href="#"></a>|</li>
+  <li><a id="topnav2" href="#"></a>|
+    <ul>
+	  <li><a  id="topnav21" href="#"></a></li>
+	  <li><a  id="topnav22" href="#"></a></li>
+      <li><a  id="topnav23" href="#"></a></li>
+    </ul>
+  </li>
+  <li><a id="topnav3" href="#"></a>
+	<ul>
+	  <li><a  id="topnav31" href="#"></a></li>
+	  <li><a  id="topnav32" href="#"></a></li>
+    </ul>
+  </li>
+  </ul>
+</nav>
+
+</header>
+<section>
+<article>
+
+<div id="efc_contenttop">
+<figure>
+  <img src="images/logo_transparent.gif" alt="Coffee beans" width="321" height="76">
+</figure>
+</div>
+<div id="efc_content">
+<div id="efc_contenthome">
+<div id="fbk_form">
+<h2>Get In Touch</h2>
+
+<p class="s3">We love to hear what you think. Fill in the form below to let us know what you feel about our products and service.
+</p>
+ 
+
+<form action="process_feedback.php" method="post"> 
+<fieldset>
+<legend>Feed Us Back</legend>
+<label class="labelContact" for="fname">*Name:</label>
+<input type="text" name="fname" required autocomplete="on" autofocus="on"  />
+<br/><br/>
+<label  class="labelContact" for="email">*Email:</label>
+<input type="email" name="email" required />
+<br/><br/>
+<label class="labelContact" for="productpurchased">*Product Purchased</label>
+<select>
+	<optgroup label="Coffee Makers">
+	<option value="selectone">Select One</option>
+    <option value="Percolaters">Percolators</option>
+    <option value="FrenchPress">French Press</option>
+    <option value="AutoDrip">Automatic Drip</option>
+    <option value="Grind">Grind and Brew</option>   
+    </optgroup>   
+    <optgroup label="Gourmet Beans">
+	<option value="selectone">Select One</option>
+    <option value="robustica">Robust Arabica</option>
+    <option value="arabica">Arabica</option>
+    <option value="frenchroast">French Roast</option>
+    <option value="orleansroast">Orleans Roast</option>   
+    </optgroup>  
+    <optgroup label="Filters">
+	<option value="selectone">Select One</option>
+    <option value="coffeefilter">Coffee Filters</option>
+    <option value="waterfilter">Water Filters</option>
+    <option value="javamaker">Java Maker</option>  
+    </optgroup>
+</select>
+<label class="labelContact"for="fbktext">My Feedback:</label>
+<textarea name="fbktext" rows="3" cols="50"></textarea>
+
+<input type="submit" class="submit" value="Submit" />
+ <button type="reset" class="reset"  value="Reset" />Reset</button>
+ </fieldset>
+</form>
+
+
+</div>
+<div id="fbk_leftpanel">
+</div>
+</div>
+</div>
+
+
+
+</article>
+</section>
+
+<footer>
+<nav>
+<ul>
+<li><a>Careers </a>|</li>
+<li><a>Trademark and Copyright </a>|</li>
+<li><a href="privacy_policy.html">Privacy Policy </a>|</li>
+<li><a>Terms and Conditions</a></li>
+</ul>
+</nav>
+</footer>
+
+
+
+</body>
+</html>

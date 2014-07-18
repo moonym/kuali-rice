@@ -1,0 +1,35 @@
+
+BODY {  font-family: monospace; 
+        font-size: 11pt; 
+        background-color: antiquewhite }
+        /*Body is Verdana, background is antique white */
+
+H1 {    color: blue; 
+        font-family: sans-serif; 
+        font-size: x-large }
+        /*Level-one headings blue, sans-serif font*/
+
+H2 {    color: darkorange; 
+        font-family: serif; 
+        font-size: large }
+        /*Level-two headings orange, serif font*/
+
+P {     color: red; 
+        font-family: verdana }
+        /*Paragraphs orange, monospaced font*/
+
+TD {    background-color: silver; 
+        color: navy }
+        /*Table cells silver with navy text */
+
+INPUT {	font-family: Verdana }
+        /* form fields and buttons in Verdana font */
+
+B {     color: gray }
+        /*Bold text is gray*/
+
+I {     color: black }
+        /*Italic text is black*/
+
+.footer {  font-size: 14pt; color: darkorange }
+        /*Footer-class elements 14 point dark orange*/	

@@ -1,0 +1,6 @@
+hibernate.connection.username=guest
+hibernate.connection.password=password
+hibernate.connection.url=jdbc:derby:net://localhost:1527/JavaTunesDB1
+hibernate.connection.driver_class=com.ibm.db2.jcc.DB2Driver
+hibernate.dialect=net.sf.hibernate.dialect.DerbyDialect
+hibernate.connection.pool_size=1 # optional

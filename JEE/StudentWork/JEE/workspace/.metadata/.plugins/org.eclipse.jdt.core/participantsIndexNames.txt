@@ -1,0 +1,21 @@
+INDEX VERSION 1.126
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1117433255.index
+\campustraffic\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\229644639.index
+\campustraffic\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2851058011.index
+\campustraffic\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3687754320.index
+\CampusTrafficWeb\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3299785335.index
+\Campus_Traffic\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\111310193.index
+\javatunes\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\257679283.index
+\Campus_Traffic\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1159949541.index
+\javatunes\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4293412967.index
+\Lab15.1\src
+C:\StudentWork\JEE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\565081388.index
+\CampusTrafficWeb\src

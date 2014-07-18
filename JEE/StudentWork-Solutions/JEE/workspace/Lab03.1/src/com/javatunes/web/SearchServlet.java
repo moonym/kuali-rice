@@ -1,0 +1,85 @@
+/*
+ * This code is sample code, provided as-is, and we make no
+ * warranties as to its correctness or suitablity for
+ * any purpose.
+ *
+ * We hope that it's useful to you.  Enjoy.
+ * Copyright 2006-9 LearningPatterns Inc.
+ */
+
+package com.javatunes.web;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Enumeration;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class SearchServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+
+	/* (non-Java-doc)
+	 * @see javax.servlet.http.HttpServlet#HttpServlet()
+	 */
+	public SearchServlet() {
+		super();
+	}
+
+	
+	/*
+	 * (non-Java-doc)
+	 * 
+	 * @see javax.servlet.http.HttpServlet#doGet(HttpServletRequest arg0,
+	 *      HttpServletResponse arg1)
+	 */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	// Read parameter from HTML form
+	String keyword = request.getParameter("keyword");
+
+	// Get header value for "User-Agent" (the browser)
+	String browser = request.getHeader("User-Agent");
+
+	// Set content-type and get PrintWriter
+	response.setContentType("text/html");
+	PrintWriter out = response.getWriter();
+
+	// Send back some HTML
+	out.println("<HTML>");
+	out.println("<HEAD><TITLE>Search Results</TITLE></HEAD>");
+	out.println("<BODY>");
+	out.println("<P>Search Results: (not implemented yet)");
+	out.println("<P>keyword=" + keyword);
+	out.println("<P>browser=" + browser);
+
+	// Optional part - get all the request headers and their values
+	Enumeration headers = request.getHeaderNames();
+
+	// Optional part - Output the request headers and their values
+	out.println("<P>All request headers:");
+	while (headers.hasMoreElements())
+	    {
+		String headerName = (String) headers.nextElement();
+		out.println("<BR>" + headerName + "=" + request.getHeader(headerName));
+	    }
+
+	// Close out the HTML tags
+	out.println("</BODY>");
+	out.println("</HTML>");
+
+	// Close the PrintWriter
+	out.close();
+
+    }
+
+	/* (non-Java-doc)
+	 * @see javax.servlet.http.HttpServlet#doPost(HttpServletRequest arg0, HttpServletResponse arg1)
+	 */
+	protected void doPost(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}

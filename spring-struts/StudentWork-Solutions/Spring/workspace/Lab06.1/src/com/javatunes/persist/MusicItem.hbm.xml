@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+        
+<hibernate-mapping>
+
+    <class name="com.javatunes.persist.MusicItem" table="ITEM">
+        <id name="id" column="ITEM_ID">
+            <generator class="identity"/>
+        </id>
+
+        <property name="num"/>
+        <property name="title" type="string" column="title"/>
+        <property name="artist" type="string" column="artist"/>
+        <property name="releaseDate" type="date" column="ReleaseDate"/>
+        <property name="listPrice" type="big_decimal" column="ListPrice"/>
+        <property name="price" type="big_decimal" column="Price"/>
+
+    </class>
+
+</hibernate-mapping>

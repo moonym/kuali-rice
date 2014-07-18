@@ -1,0 +1,1987 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <title>Creating Advanced Navigation</title>
+   </head><style>
+	table {font-family: Verdana, Arial;
+	      font-size: 8pt;
+		  margin: 0pt}
+    p, li, ul, tr, td {font-family: Verdana, Arial;
+	      font-size: 8pt} 
+	td {padding-right: 10pt}
+	h1 {font-family: Verdana, Arial;
+	      font-size: 23pt}
+	h2 {font-family: Verdana, Arial;
+	      font-size: 14pt}
+	h3 {font-family: Verdana, Arial;
+	      font-size: 12pt}
+	.graphic {width: 65%;
+	      height: 65%;}
+	.big1 {font-size: 10pt}
+	.big2 {font-size: 12pt}
+	.big3 {font-size: 14pt}
+	.big4 {font-size: 16pt}
+	
+	.botbord {border-width: 0pt;
+	        border-style: solid;
+			border-color: black;
+			border-bottom-width: 1pt}
+			
+	.topbord {border-width: 0pt;
+	        border-style: solid;
+			border-color: black;
+			border-top-width: 1pt}
+	
+	.thickbord {border-width: 0pt;
+	        border-style: solid;
+			border-color: black;
+			border-top-width: 1.5pt}
+		  
+	.inlinecode {font-family: Courier New}
+	.code {font-family: Courier New}
+	.removecode {color: gray}
+	.hide {display: none}
+	.lessontitle {font-size: 22pt; font: bold; font-family: Verdana, Arial}
+	.lessonnumber {font-size: 33pt; font-family: Verdana, Arial}
+	</style><body link="blacK" vlink="black" alink="black">
+      <div align="left">
+         <table width="670">
+            <tr>
+               <td width="500"><a name="uid-a1d1b6f9-f571-11e0-9329-917f1bba8bcc"></a><span class="lessonnumber">Lesson 1</span><br><span class="lessontitle">Creating Advanced Navigation</span><h3>Lesson Objectives:</h3>
+                  <p>In this lesson, you will create advanced navigation.</p>
+                  <p>You will:</p>
+                  <ul>
+                     <li>Create CSS-based menus.</li>
+                     <li>Incorporate images in CSS-based menus.</li>
+                     <li>Create image maps.</li>
+                  </ul>
+                  <h3>Introduction</h3>
+                  
+                  <p>You have tested the validity of markups used in your website.
+                     However, a valid website serves no purpose if a user cannot easily browse
+                     through its pages. In this lesson, you will create advanced navigation.
+                  </p>
+                  
+                  
+                  <p>Links are the essence of the World Wide Web. They enable
+                     a web page to connect to multiple locations on the Internet. Websites support
+                     this principle of interconnectivity to provide users with an easy means of
+                     accessing different web pages within or outside a website. Absence of links
+                     may lead users to lose their trail in your website, being stuck on a dead-end
+                     web page, or having no clue on how to get back to the home page. Such negative
+                     experiences may discourage users from visiting your website in the future.
+                  </p>
+                  <br><a name="uid-b775921a-f571-11e0-9329-917f1bba8bcc"></a><span class="big3">Topic A</span><hr><span class="big4">Create CSS-Based Menus</span>
+                  
+                  
+                  <p>You familiarized yourself with the testing of markups
+                     in a CSS file. A means of navigation is very important for users to access
+                     different web pages in your website. However, you might wish to provide users
+                     with more structured navigation options that are clearly visible. In this
+                     topic, you will create CSS-based menus.
+                  </p>
+                  
+                  
+                  <p>Users often waste a great deal of time trying to navigate
+                     to the content they are interested in, or simply trying to find their way
+                     around a website. Hypertext links are not particularly noticeable and may
+                     be overlooked, especially if the website contains a lot of textual content.
+                     Moreover, the links 
+                     are not particularly feasible when a website contains many pages. Providing
+                     a clear-cut, well-positioned, and visually attractive navigation options is
+                     a professional practice that avoids such problems.
+                  </p>
+                  <br>
+                  
+                  
+                  <p>You might wish to provide users with more structured navigation
+                     options that are clearly visible. In this topic, you will create CSS-based
+                     menus.
+                  </p>
+                  
+                  
+                  <p><b><span class="big2">Common Menu Types</span></b></p>
+                  
+                  
+                  <p>Menus are a common method of providing users with navigation
+                     options to browse through the various pages of a website. CSS-based menus
+                     comprise hypertext links that are organized into lists with applied formatting
+                     defined in the CSS. Orientation of the menu, either vertically or horizontally,
+                     can also be specified using CSS. These menus usually contain items that reflect the structure of the website. Menu items can also
+                     include submenus based on the website's structure. 
+                  </p>
+                  <a name=""></a>
+                  <br><br><a href="images/placeholder.jpg" target="newWindow"><img src="images/placeholder.jpg" width="450" alt="ghost" border="0"></a><br>
+                  <b>Figure 1-1: <i></i></b>
+                  <br><br>
+                  <br>
+                     <table cellpadding="10">
+                        <tbody>
+                           <tr valign="top">
+                              <td width="20"><img src="images/sp_note.jpg" alt="Student Note"></td>
+                              <td>
+                                 A CSS based menu may have multiple levels of submenus. However,
+                                 using too many sublevels for a menu is not a good practice because it hinders
+                                 the ease of navigation for users.<br></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  
+                  <table width="500"></table>
+                  
+                  <p><b><span class="big2">The Display Property</span></b></p>
+                  
+                  
+                  <p>The <span class="code">display</span> property
+                     is used to control the appearance of an element on a web page. 
+                  </p>
+                  
+                  <table width="450" cellpadding="3" cellspacing="0">
+                     
+                     <tr>
+                        <th align="left" class="botbord">Display Property Value</th>
+                        <th align="left" class="botbord">Description</th>
+                        
+                     </tr>
+                     <tr>
+                        <td> <span class="code">	display: block</span> 
+                        </td>
+                        
+                        <td>Displays an element with a line break above and below it.</td>
+                     </tr>
+                     
+                     <tr>
+                        <td> <span class="code">display: inline</span> 
+                        </td>
+                        
+                        <td>Displays an element without any line breaks above or below it.</td>
+                        
+                     </tr>
+                     <tr>
+                        <td> <span class="code">display: none</span> 
+                        </td>
+                        
+                        <td>The element is not visible on the web page. The browser does not display
+                           blank space in the element's place.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td> <span class="code">display: list-item</span> 
+                        </td>
+                        <td>Displays
+                           an element as a list. This style rule is not supported by IE 6 or earlier
+                           versions.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="topbord" colspan="2"><br></td>
+                     </tr>
+                  </table>
+                  
+                  <table width="500">
+                     <tr>
+                        <td valign="top" colspan="2"><b>The :hover Pseudoclass</b><ol>
+                              
+                              <p>You can create rollovers for various elements, other than
+                                 links, on a web page using the <span class="code">:hover</span> pseudoclass.
+                                 Internet Explorer 7 and earlier versions can only apply the <span class="code">:hover</span> pseudoclass to the links. So,
+                                 the menus that use this class may not appear correctly. In such cases, you
+                                 can add a script code to support rollovers for these elements.
+                              </p>
+                              
+                           </ol>
+                        </td>
+                     </tr>
+                  </table>
+                  
+                  <h2>How to Create CSS-Based Menus</h2>
+                  
+                  <table width="500">
+                     <tr>
+                        <td valign="top"><b>Procedure Reference: Create CSS-Based Menus</b></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>
+                              
+                              <p>To create CSS-based menus:</p>
+                              
+                           </p>
+                           <ol>
+                              <li>In a text editor, open the web page for which you
+                                 want to add a menu.
+                                 
+                              </li>
+                              <li>In the header section of the markup, within the <span class="code">nav</span> element, create an
+                                 unordered list of menu items using the <span class="code">&lt;ul&gt;</span> element.
+                                 
+                              </li>
+                              <li>Within the <span class="code">&lt;ul&gt;</span> element,
+                                 create list items using the <span class="code">&lt;li&gt;</span> elements. 
+                                 
+                              </li>
+                              <li>Within each list item, create a hypertext link to
+                                 another page.
+                                 
+                              </li>
+                              <li>Define styles for the normal and hover effect for
+                                 the menu in the stylesheet. 
+                                 
+                              </li>
+                              <li>Save the file.
+                                 
+                              </li>
+                              <li>Launch the web page in a browser and move the mouse
+                                 over the CSS-based menu to view the mouse-over effect. 
+                                 
+                              </li>
+                              <li>If necessary, copy the unordered list and paste it
+                                 in other web pages of the website to maintain consistency in the visual appearance
+                                 of navigation links.
+                                 
+                              </li>
+                           </ol><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top"><b>Procedure Reference: Create Popup Submenus</b></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>
+                              
+                              <p>To create popup submenus:</p>
+                              
+                           </p>
+                           <ol>
+                              <li>In a text editor, open the web page for which you
+                                 need to add a submenu.
+                                 
+                              </li>
+                              <li>For each menu that requires a submenu, create an
+                                 unordered list of submenu items. 
+                                 
+                              </li>
+                              <li>Within the submenu unordered list, add the required
+                                 hyperlinks for the relevant content pages.
+                                 
+                              </li>
+                              <li>Save the file.
+                                 
+                              </li>
+                              <li>If necessary, add this code to other web pages in
+                                 the website to maintain consistency.
+                                 
+                              </li>
+                           </ol><br></td>
+                     </tr>
+                  </table>
+                  <table width="500"></table><a name="uid-346acad7-3203-11e1-9118-abc835693900"></a>
+                  
+                  <table width="500">
+                     <tr>
+                        <td colspan="2"><span class="big3">Activity 1-1
+                              <hr></span><span class="big2">Creating CSS Based Menus</span><br><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top"><b>Data Files: </b><ul>
+                              <li>C:\085737Data\Creating_Advanced_Navigation\index.html</li>
+                              <li>C:\085737Data\Creating_Advanced_Navigation\EFC_styles.css</li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top"><b>Scenario: </b></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           
+                           <p>The Everything For Coffee
+                              website contains several web pages. To enable users to easily access these
+                              pages, you decide to include navigation facility. 
+                           </p>
+                           <br></td>
+                     </tr>
+                  </table>
+                  <table width="500">
+                     <tr>
+                        <td><b>What You Do</b></td>
+                        <td><b>How You Do It</b></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="topbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">1.  </td>
+                                    <td width="225">Change the navigation links in the header
+                                       section to a two-level list.
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>In the Notepad++ application, navigate
+                                       to the C:\085737Data\Creating_Advanced_Navigation folder
+                                       and open the index.html file.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>In line 14, before the start of text,
+                                       click and select text until the end of line 19.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>Delete the selected lines.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>To add products to the menu, type <span class="code"><b>&lt;li&gt;&lt;a href="#"&gt;Products&lt;/a&gt;|
+                                             </b></span>
+                                       
+                                       <br><i><b>See Code Sample 1.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">e.  </td>
+                                    <td>Insert a new line and type <span class="code"><b>&lt;ul&gt;</b></span>
+                                       
+                                       <br><i><b>See Code Sample 2.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">f.  </td>
+                                    <td>Insert a new line and specify the items
+                                       for the submenus of Products as &#8220;Coffee Filters,&#8221; &#8220;Coffee
+                                       Makers,&#8221; and &#8220;Gourmet Beans.&#8221;
+                                       
+                                       <br><i><b>See Code Sample 3.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">g.  </td>
+                                    <td>Insert a new line and type <span class="code"><b>&lt;/ul&gt;
+                                             &lt;/li&gt;</b></span>
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">h.  </td>
+                                    <td>Similarly, create the customer service
+                                       menu and add its submenu items. 
+                                       
+                                       <br><i><b>See Code Sample 4.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 1</b><span class="code"><pre>&lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;|&lt;/li&gt;
+<b>&lt;li&gt;&lt;a href="#"&gt;Products&lt;/a&gt;|
+</b>&lt;/nav&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 2</b><span class="code"><pre><b>&lt;ul&gt;</b>
+</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 3</b><span class="code"><pre>&lt;li&gt;&lt;a href="index.html"&gt;Products&lt;/a&gt;|
+<b>&lt;li&gt;&lt;a href="#"&gt;Coffee Filters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Coffee Makers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Gourmet Beans&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;</b>
+&lt;/nav&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 4</b><span class="code"><pre>&lt;/ul&gt;
+&lt;/li&gt;
+<b>&lt;li&gt;&lt;a href="#"&gt;Customer Service&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Locations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</b>&lt;/nav&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">2.  </td>
+                                    <td width="225">Define the CSS menu.</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>On the tool bar, click the open button,
+                                       navigate to the C:\085737Data\Creating_Advanced_Navigation folder,
+                                       and open the EFC_styles.css file in Notepad++.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>In line 93, change the width to 270px.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>In line 114, after <span class="code"><b>}</b></span>, click
+                                       and insert a new line.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>To define the CSS menu as an unordered
+                                       list, type <span class="code"><b>ul ul {</b></span>
+                                       
+                                       <br><i><b>See Code Sample 5.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">e.  </td>
+                                    <td>To define the width of the unordered list,
+                                       insert a new line and type <span class="code"><b>width: 120px;
+                                             </b></span>
+                                       
+                                       <br><i><b>See Code Sample 6.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">f.  </td>
+                                    <td>To specify not to display a box for the
+                                       unordered list, insert a new line and type <span class="code"><b>display:none;</b></span> and close
+                                       the property definition.
+                                       
+                                       <br><i><b>See Code Sample 7.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">g.  </td>
+                                    <td>To specify that formatting will apply
+                                       to list items of the second level unordered list, type <span class="code"><b>ul ul li {</b></span>
+                                       
+                                       <br><i><b>See Code Sample 8.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">h.  </td>
+                                    <td>Define the top and padding space for the
+                                       list items and close the property definition. 
+                                       
+                                       <br><i><b>See Code Sample 9.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 5</b><span class="code"><pre>}
+<b>ul ul {
+</b>
+nav ul li {</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 6</b><span class="code"><pre>ul ul {
+<b>width: 120px;
+</b>
+nav ul li {</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 7</b><span class="code"><pre>width: 120px;
+<b>display:none;
+}
+</b>
+nav ul li {</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 8</b><span class="code"><pre>}
+<b>ul ul li {
+</b>
+nav ul li {</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 9</b><span class="code"><pre>ul ul li {
+<b>top:6px;
+padding:3px 0 0;
+}
+</b>
+nav ul li {</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">3.  </td>
+                                    <td width="225">To define hovering for the CSS menu.</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>To insert a new line, in line 142 after <span class="code"><b>}</b></span> press <b>Enter</b>.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>To define a different format for mouse
+                                       over, type <span class="code"><b>nav ul li a:hover{
+                                             </b></span>
+                                       
+                                       <br><i><b>See Code Sample 10.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>To set the padding for the image displayed
+                                       on mouse over, insert a new line and type <span class="code"><b>padding:0 8px 0 8px;
+                                             </b></span>
+                                       
+                                       <br><i><b>See Code Sample 11.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>Define the other parameters for the hover
+                                       effect and close the property definition. 
+                                       
+                                       <br><i><b>See Code Sample 12.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">e.  </td>
+                                    <td>To define that the format applies when
+                                       mouse is moved over the unordered list within the list items, insert a new
+                                       line and type <span class="code"><b>nav ul li:hover &gt; ul {
+                                             </b></span>
+                                       
+                                       <br><i><b>See Code Sample 13.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">f.  </td>
+                                    <td>Define the properties for the mouse-over
+                                       effect and close the property definition. 
+                                       
+                                       <br><i><b>See Code Sample 14.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 10</b><span class="code"><pre>}
+<b>nav ul li a:hover{
+</b>
+</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 11</b><span class="code"><pre>nav ul li a:hover{
+<b>padding:0 8px 0 8px;
+</b>
+</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 12</b><span class="code"><pre>padding:0 8px 0 8px;
+<b>color:#3c0c0c;
+background-color:#cebd77;
+border-radius: 3px;  
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+}</b>
+</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 13</b><span class="code"><pre>}
+<b>nav ul li:hover &gt; ul {
+</b>
+</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 14</b><span class="code"><pre>nav ul li:hover &gt; ul {
+<b>display:block;
+position: absolute; 
+top:0;
+width: 120px;
+}</b>
+</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">4.  </td>
+                                    <td width="225">Save and view the webpage.</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>To save the EFC_styles.css file
+                                       and index.html file, on the <b>Toolbar</b> click <b>Save All.</b>
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>In the Notepad++ application, switch to
+                                       the index.html web page.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>Launch the web page in Firefox.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>In the header section, move the mouse
+                                       over the menu and submenus and observe the effect. 
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">e.  </td>
+                                    <td>In the footer section, move the mouse
+                                       over the menu to observe the effect. 
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">f.  </td>
+                                    <td>Close the Firefox browser.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="thickbord"><br><br><br></td>
+                     </tr>
+                  </table>
+                  <a name="uid-ed68c22e-f571-11e0-9329-917f1bba8bcc"></a><span class="big3">Topic B</span><hr><span class="big4">Incorporate Images in CSS-Based Menus</span>
+                  
+                  
+                  <p>You created CSS-based menus for a website. It's also important
+                     to make the menus visually pleasing in order to attract users' attention.
+                     In this topic, you will incorporate images in CSS-based menus.
+                  </p>
+                  
+                  
+                  <p>A CSS-based menu can provide an easily accessible and
+                     organized method of navigation for a website. However, you may need to add
+                     a little more emphasis to make it stand out from the other elements on the
+                     page. By using images in the menu, you achieve this effect without overshadowing
+                     the website's content.
+                  </p>
+                  <br>
+                  
+                  
+                  <p>It is important to make the menus visually pleasing in
+                     order to attract the users' attention. In this topic, you will incorporate
+                     images in CSS-based menus.
+                  </p>
+                  
+                  
+                  <p><b><span class="big2">Image Sprite</span></b></p>
+                  
+                  
+                  <p>An image sprite is a single image that is formed by a
+                     collection of images. Often, a web page contains a lot of images. Loading
+                     these images individually generates multiple server requests resulting in
+                     an increased bandwidth usage and a longer time to load the web page. Image
+                     sprites allow you to reduce the number of server requests and save the available
+                     bandwidth.
+                  </p>
+                  
+                  <table width="500"></table>
+                  
+                  <p><b><span class="big2">Navigation
+                           List with Image Sprites</span></b></p>
+                  
+                  
+                  <p>Image sprites allow you to display individual sections
+                     of a composite image, such as a navigation list. Image sprites allow you to
+                     save the bandwidth because only one image is downloaded on the user's computer
+                     instead of multiple images for different states of each button. The performance
+                     of the web page also improves, because the entire image is downloaded when
+                     the page loads, instead of each image downloading as and when required based
+                     on user interaction. 
+                  </p>
+                  <a name=""></a>
+                  <br><br><a href="images/placeholder.jpg" target="newWindow"><img src="images/placeholder.jpg" width="450" alt="ghost" border="0"></a><br>
+                  <b>Figure 1-2: <i></i></b>
+                  <br><br>
+                  
+                  <table width="500"></table>
+                  
+                  <h2>How to Incorporate Images in CSS-Based Menus</h2>
+                  
+                  <table width="500">
+                     <tr>
+                        <td valign="top"><b>Procedure Reference: Incorporate Images in CSS-Based Menus</b></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>
+                              
+                              <p>To incorporate images in CSS-based menus:</p>
+                              
+                           </p>
+                           <ol>
+                              <li>Place the required images in the appropriate folder
+                                 of the website.
+                                 
+                              </li>
+                              <li>In the text editor, open the page for which you want
+                                 to add an image-based menu. 
+                                 
+                              </li>
+                              <li>Add code to specify the image to be used as the menu.
+                                 
+                              </li>
+                              <li>In the stylesheet, enter code to specify the part
+                                 of the image to be displayed during the normal state of the links.
+                                 
+                              </li>
+                              <li>Enter code to specify the part of the image to be
+                                 displayed when mouse is moved over the links.
+                                 
+                              </li>
+                              <li>Save the stylesheet.
+                                 
+                              </li>
+                              <li>View the web page in a browser and position the mouse
+                                 pointer over a menu to view the changes.
+                                 
+                              </li>
+                           </ol><br></td>
+                     </tr>
+                  </table>
+                  <table width="500"></table><a name="uid-182e9e18-320c-11e1-9118-abc835693900"></a>
+                  
+                  <table width="500">
+                     <tr>
+                        <td colspan="2"><span class="big3">Activity 1-2
+                              <hr></span><span class="big2">Incorporating Images in CSS-Based Menus</span><br><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top"><b>Data Files: </b><ul>
+                              <li>C:\085737Data\Creating_Advanced_Navigation\index.html</li>
+                              <li>C:\085737Data\Creating_Advanced_Navigation\EFC_styles.css</li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top"><b>Scenario: </b></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           
+                           <p>You have received feedback from the client requesting
+                              the use of images to make the menu options more attractive. The graphic designer
+                              has sent you the required images to use in the menu.
+                           </p>
+                           <br></td>
+                     </tr>
+                  </table>
+                  <table width="500">
+                     <tr>
+                        <td><b>What You Do</b></td>
+                        <td><b>How You Do It</b></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="topbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">1.  </td>
+                                    <td width="225">Update navigation links to reference
+                                       CSS information.
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>In index.html, in
+                                       line 12, delete the &#8220;class=efcmenu.&#8221;
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>To define that the unordered list will
+                                       be formatted based on a class, type <span class="code"><b>id="efcnavsprite"</b></span>
+                                       
+                                       <br><i><b>See Code Sample 1.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>In line 13, click after <span class="code"><i>&lt;a</i></span>, remove the existing
+                                       code till Home, and type <span class="code"><b>id="topnav1" href="#"&gt;</b></span> 
+                                       
+                                       <br><i><b>See Code Sample 2.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>Similarly in lines 14, 16, 17, 18, 21,
+                                       23, and 24 after <span class="code"><i>&lt;a</i></span>,
+                                       remove the existing code, enter the id attribute, and remove the text within
+                                       the anchor element.
+                                       
+                                       <br><i><b>See Code Sample 3.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 1</b><span class="code"><pre>&lt;nav&gt;
+&lt;ul <b>id="efcnavsprite"</b>&gt;
+&lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;|&lt;/li&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 2</b><span class="code"><pre>&lt;li&gt;&lt;a <span class="removecode">href="index.html"&gt;Home</span><b>id="topnav1" href="#"&gt;</b>&lt;/a&gt;|&lt;/li&gt;</pre></span>
+                           
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 3</b><span class="code"><pre>&lt;ul id="efcnavsprite"&gt;
+&lt;li&gt;&lt;a <span class="removecode">href="index.html"&gt;Products</span><b>id="topnav2"</b> href="#"&gt;&lt;/a&gt;|
+&lt;ul&gt;
+<span class="removecode">href="#"&gt;Coffee Filters</span><b>id="topnav21" href="#"&gt;</b> &lt;/a&gt;&lt;/li&gt;
+<span class="removecode">href="#"&gt;Coffee Makers</span><b>id="topnav22" href="#"&gt;</b>&lt;/a&gt;&lt;/li&gt;
+<span class="removecode">href="#"&gt;Gourmet Beans</span><b>id="topnav23" href="#"&gt;</b>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+<span class="removecode">href="index.html"&gt;Customer Services&lt;</span><b>id="topnav3" href="#"&gt;</b>&lt;/a&gt;
+&lt;ul&gt;
+<span class="removecode">href="#"&gt;Contact Us</span><b>id="topnav31" href="#"&gt;</b>&lt;/a&gt;&lt;/li&gt;
+<span class="removecode">href="#"&gt;Locations</span><b>id="topnav32" href="#"&gt;</b>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">2.  </td>
+                                    <td width="225">Specify the image to be used as the menu.</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>Switch to the EFC_styles.css file. 
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>In line 93, change the width to 350px.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>In the beginning of line 139 and select
+                                       till the end of line 141 and delete it.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>To define the class for formatting the
+                                       image, in line 155, type <span class="code"><b>#efcnavsprite a {
+                                             </b></span>
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">e.  </td>
+                                    <td>Define the properties for the mouse-over
+                                       effect and close the property definition.
+                                       
+                                       <br><i><b>See Code Sample 4.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 4</b><span class="code"><pre>#efcnavsprite a {
+<b>display: block;
+background:url(efcmenu.png) no-repeat;
+}</b>
+</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">3.  </td>
+                                    <td width="225">Specify the part of the image to be displayed
+                                       during the normal state for the links.
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>To specify the part of the image for normal
+                                       state of the home link, insert two new lines and type <span class="code"><b>#efcnavsprite li a#topnav1 { width:90px;  height:20px; background-position: -3px -1px;   top:0;}
+                                             </b></span>.
+                                       
+                                       <br><i><b>See Code Sample 5.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>Similarly, specify the part of the image
+                                       to be used for normal state of other links. 
+                                       
+                                       <br><i><b>See Code Sample 6.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 5</b><span class="code"><pre>}
+
+<b>#efcnavsprite li a#topnav1 { width:90px;  height:20px; background-position: -3px -1px; top:0;}
+</b>
+
+#hm_topleft {width:434px; height:300px; float:left;}</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 6</b><span class="code"><pre>
+
+<b>#efcnavsprite li a#topnav2 { width:90px; height:20px; background-position:&#8658;
+ -3px -18px; top:0px;}
+</b>
+<b>#efcnavsprite li a#topnav21 { width:90px; height:20px; background-position:&#8658;
+ -3px -35px; top:0px; }
+</b>
+<b>#efcnavsprite li a#topnav22 { width:90px; height:20px; background-position:&#8658;
+ -3px -53px; top:0px; }
+</b>
+<b>#efcnavsprite li a#topnav23 { width:90px; height:20px; background-position:&#8658;
+ -3px -71px; top:0px; }
+</b>
+<b>#efcnavsprite li a#topnav3 { width:90px; height:20px; background-position:&#8658;
+ -3px -89px; top:0px; }
+</b>
+<b>#efcnavsprite li a#topnav31 { width:90px; height:20px; background-position:&#8658;
+ -3px -107px; top:0px; }
+</b>
+<b>#efcnavsprite li a#topnav32 { width:90px; height:20px; background-position:&#8658;
+ -3px -125px; top:0px; }
+</b></pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">4.  </td>
+                                    <td width="225">Specify the part of the image to be displayed
+                                       when mouse is moved over the links.
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>To specify the part of the image to be
+                                       displayed when mouse is moved over the home link, insert two new lines and
+                                       type <span class="code"><b>#efcnavsprite li a#topnav1:hover { width:90px;  height:20px; background-position: -115px -1px;   top:0;}
+                                             </b></span>.
+                                       
+                                       <br><i><b>See Code Sample 7.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>Similarly, specify the part of the image
+                                       to be displayed for other links. 
+                                       
+                                       <br><i><b>See Code Sample 8.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 7</b><span class="code"><pre><b>#efcnavsprite li a#topnav1:hover { width:90px;  height:20px; background-position: -115px -1px;   top:0;}
+</b></pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 8</b><span class="code"><pre>
+<b>
+#efcnavsprite li a#topnav2:hover { width:90px; height:20px;&#8658;
+ background-position: -115px -18px; top:0px;}
+
+#efcnavsprite li a#topnav21:hover { width:90px; height:20px;&#8658;
+ background-position: -115px -35px; top:0px;}
+
+#efcnavsprite li a#topnav22:hover { width:90px; height:20px;&#8658;
+ background-position: -115px -53px; top:0px;}
+
+#efcnavsprite li a#topnav23:hover { width:90px; height:20px;&#8658;
+ background-position: -115px -71px; top:0px;}
+
+#efcnavsprite li a#topnav3:hover { width:90px; height:20px;&#8658;
+  background-position: -115px -89px; top:0px;}
+
+#efcnavsprite li a#topnav31:hover { width:90px; height:20px;&#8658;
+  background-position: -115px -107px; top:0px;}
+
+#efcnavsprite li a#topnav32:hover { width:90px; height:20px;&#8658;
+  background-position: -115px -125px; top:0px;}
+</b>
+</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">5.  </td>
+                                    <td width="225">Save and view the webpage.</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>To save the EFC_styles.css file
+                                       and the index.html file, on the <b>Toolbar,</b> click <b>Save All.</b>
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>In the Notepad++ application, switch to
+                                       the index.html page. 
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>Launch the web page in Firefox.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>In the header section, move the mouse
+                                       pointer over the menu and submenu to observe the changes. 
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">e.  </td>
+                                    <td>Close the Firefox browser.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">f.  </td>
+                                    <td>In the Notepad++ application, close the index.html and EFC_styles.css files.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="thickbord"><br><br><br></td>
+                     </tr>
+                  </table>
+                  <a name="uid-56249651-f572-11e0-9329-917f1bba8bcc"></a><span class="big3">Topic C</span><hr><span class="big4">Create Image Maps</span>
+                  
+                  
+                  <p>You have incorporated images in CSS-based menus to make
+                     them look attractive. In certain circumstances, you may need to use a purely
+                     image-based navigation system rather than menus or hypertext links. In this
+                     topic, you will create image maps.
+                  </p>
+                  
+                  
+                  <p>Images are a powerful means of interacting with users.
+                     The use of graphical navigation options provides users with a more intuitive
+                     and enjoyable way of navigating to specific content within your website. In
+                     addition, this feature will help you make your website stand apart from other
+                     sites on the web.
+                  </p>
+                  <br>
+                  
+                  
+                  <p>You may need to use a purely image-based navigation system
+                     rather than menus or hypertext links. In this topic, you will create image
+                     maps.
+                  </p>
+                  
+                  
+                  <p><b><span class="big2">Image Maps</span></b></p>
+                  
+                  
+                  <p>An image map is a type of image that contains predefined
+                     links. You can access these links on the image to view any additional information.
+                     The image for the image map is added using the <span class="code">&lt;img&gt;</span> tag, and the links are specified using the <span class="code">usemap</span> attribute. HTML
+                     allows you to create two types of image maps, the client-side image maps and
+                     server-side image maps. 
+                  </p>
+                  
+                  <table width="450" cellpadding="3" cellspacing="0">
+                     
+                     <tr>
+                        <th align="left" class="botbord">Image
+                           map
+                        </th>
+                        <th align="left" class="botbord">Description</th>
+                     </tr>
+                     <tr>
+                        
+                        <td>Client-side image maps</td>
+                        <td>Are defined by using the &lt;map&gt;
+                           tag. You can define the coordinates for the linked areas on the image. The
+                           web servers do not process the data to calculate the location of mouse over
+                           the image.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Server-side image maps</td>
+                        <td>Are
+                           similar to the client-side image map with one exception. When a user clicks
+                           on any part of the map, the horizontal and vertical coordinates of the mouse
+                           pointer cursor are sent to the server. The server processes this information
+                           and responds with an appropriate result that will be displayed on the browser.
+                        </td>
+                        
+                     </tr>
+                     <tr>
+                        <td class="topbord" colspan="2"><br></td>
+                     </tr>
+                  </table>
+                  <a name=""></a>
+                  <br><br><a href="images/placeholder.jpg" target="newWindow"><img src="images/placeholder.jpg" width="450" alt="ghost" border="0"></a><br>
+                  <b>Figure 1-3: <i></i></b>
+                  <br><br>
+                  <br>
+                     <table cellpadding="10">
+                        <tbody>
+                           <tr valign="top">
+                              <td width="20"><img src="images/sp_note.jpg" alt="Student Note"></td>
+                              <td>
+                                 You cannot define an image map using the <span class="code">usemap</span>, if the entire image is defined as a hyperlink
+                                 using the <span class="code">&lt;a&gt;</span> tag.<br>
+                                 
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  
+                  <p></p>
+                  
+                  <table width="500">
+                     <tr>
+                        <td valign="top" colspan="2"><b>Hotspot Coordinates</b><ol>
+                              
+                              <p>Creating an image map requires the coordinates of its
+                                 hotspots. You can get these coordinates by opening the image in a graphics
+                                 editing software, such as Microsoft Paint, and placing the mouse pointer over
+                                 a particular point. The coordinates of this point will be displayed on the
+                                 status bar at the bottom of the window. You can note down the required coordinates
+                                 and use them to define the hotspots.
+                              </p>
+                              
+                           </ol>
+                        </td>
+                     </tr>
+                  </table>
+                  
+                  <p><b><span class="big2">The &lt;map&gt;
+                           Tag</span></b></p>
+                  
+                  
+                  <p>The <span class="code">&lt;map&gt;</span> tag
+                     is used to define a client-side image map. The main advantage of this &lt;map
+                     &gt; tag is that it is supported by all major browsers such as Internet Explorer,
+                     Opera, Firefox, Safari, and Chrome.
+                  </p>
+                  
+                  <table width="500"></table>
+                  
+                  <p><b><span class="big2">The &lt;area&gt;
+                           Tag</span></b></p>
+                  
+                  
+                  <p>The <span class="code">&lt;area&gt;</span> tag
+                     is used to define a hotspot area within an image map. The &lt;area&gt; tag provides
+                     different attributes that enable you to define a hotspot of specific shape
+                     to suit your needs. 
+                  </p>
+                  
+                  <table width="450" cellpadding="3" cellspacing="0">
+                     
+                     <tr>
+                        <th align="left" class="botbord">Attribute</th>
+                        
+                        <th align="left" class="botbord">Description</th>
+                     </tr>
+                     <tr>
+                        <td>coords</td>
+                        
+                        <td>Defined in coordinates and it specifies the coordinates within an area.</td>
+                        
+                     </tr>
+                     <tr>
+                        <td>href</td>
+                        <td>Defined as a URL and it specifies the
+                           hyperlink's target.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>nohref</td>
+                        <td>When set,
+                           implies that the area does not have an associated link.
+                        </td>
+                     </tr>
+                     <tr>
+                        
+                        <td>shape</td>
+                        <td>Specified as default, rect, circle, or poly to
+                           indicate the shape of an area in a map.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>target</td>
+                        
+                        <td>Sets the target location where the linked file will be opened. The
+                           four values that it accepts include <span class="code">_blank</span>, <span class="code">_parent</span>, <span class="code">_self</span>, and <span class="code">_top</span>. 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="topbord" colspan="2"><br></td>
+                     </tr>
+                  </table>
+                  
+                  <table width="500"></table>
+                  
+                  <h2>How to Create Image Maps</h2>
+                  
+                  <table width="500">
+                     <tr>
+                        <td valign="top"><b>Procedure Reference: Create an Image Map</b></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>
+                              
+                              <p>To create an image map:</p>
+                              
+                           </p>
+                           <ol>
+                              <li>In the text editor, open the web page for which you
+                                 want to add an image map.
+                                 
+                              </li>
+                              <li>Add the image to be used as the image map using the <span class="code">&lt;img&gt;</span> tag.
+                                 
+                              </li>
+                              <li>In the <span class="code">&lt;img&gt;</span> element,
+                                 to define the coordinates of the mapped areas in images, set the value of
+                                 the <span class="code">usemap</span> attribute
+                                 
+                              </li>
+                              <li>Below the <span class="code">&lt;img&gt;</span> tag,
+                                 define the map element. 
+                                 
+                              </li>
+                              <li>Enter the map attributes to define the hotspot areas
+                                 on the map.
+                                 
+                              </li>
+                              <li>Save the file.
+                                 
+                              </li>
+                              <li>If necessary, view the web page in a browser and
+                                 click a hotspot to load the corresponding page.
+                                 
+                              </li>
+                           </ol><br></td>
+                     </tr>
+                  </table>
+                  <table width="500"></table><a name="uid-84fd0ee6-31f9-11e1-9118-abc835693900"></a>
+                  
+                  <table width="500">
+                     <tr>
+                        <td colspan="2"><span class="big3">Activity 1-3
+                              <hr></span><span class="big2">Creating Image Maps</span><br><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top"><b>Data Files: </b><ul>
+                              <li>C:\085737Data\Creating_Advanced_Navigation\locations.html</li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top"><b>Scenario: </b></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           
+                           <p>Your peer reviews the website and suggests that you include
+                              a web page that will help users to locate different offices of your company.
+                              You decide to present this information visually so that users can also see
+                              the geographical location of each office.
+                           </p>
+                           <br></td>
+                     </tr>
+                  </table>
+                  <table width="500">
+                     <tr>
+                        <td><b>What You Do</b></td>
+                        <td><b>How You Do It</b></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="topbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">1.  </td>
+                                    <td width="225">Define an image to be used as a map.</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>Click on open and navigate to C:\085737Data\Creating_Advance_Navigation folder
+                                       and open the locations.html file in Notepad++.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>In line 44, after the code, click and
+                                       insert a new line.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>To specify the image to be used as a map,
+                                       type <span class="code"><b>&lt;img src="images/world_map.png" alt="Corporate locations on the map" width="760" height="340"&gt;</b></span>
+                                       
+                                       <br><i><b>See Code Sample 1.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>To define the <span class="code">usemap</span> attribute for the coordinates of mapped areas
+                                       in the image, click before <span class="code">&gt;</span>,
+                                       add space and type <span class="code"><b>usemap="#LocationMap"</b></span>
+                                       
+                                       <br><i><b>See Code Sample 2.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">e.  </td>
+                                    <td>To define the name of the map, insert
+                                       a new line and type <span class="code"><b>&lt;map name="LocationMap"&gt;</b></span>
+                                       
+                                       <br><i><b>See Code Sample 3.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">f.  </td>
+                                    <td>To close the map tag, insert a new line
+                                       and type <span class="code"><b>&lt;/map&gt;</b></span>
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 1</b><span class="code"><pre>&lt;figure style="margin:0; padding:0"&gt;
+<b>&lt;img src="images/world_map.png" alt="Corporate locations on the map" width="760" height="340"&gt;</b></pre></span>
+                           
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 2</b><span class="code"><pre>&lt;figure style="margin:0; padding:0"&gt;
+&lt;img src="images/world_map.png" alt="Corporate locations on the map" width="760"
+height="340" <b>usemap="#LocationMap"</b>&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 3</b><span class="code"><pre>&lt;img src="images/world_map.jpg" alt="Corporate locations on the map" width="760" &#8658;
+ height="340" usemap="#LocationMap"&gt;
+<b>&lt;map name="LocationMap"&gt;</b>
+&lt;/figure&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">2.  </td>
+                                    <td width="225">Define the areas on the map to add the
+                                       links.
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>At the end of line 46, click and insert
+                                       a new line. 
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>To define the shape and coordinates for
+                                       San Francisco on the map, type <span class="code"><b>&lt;area shape="circle" coords="48,104,3" alt="San Francisco" title="1 DJ Street, San Francisco, California 94111" href="#"&gt;
+                                             </b></span>
+                                       <br><i><b>See Code Sample 4.</b></i>
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>Similarly, define the shape, coordinates,
+                                       and name for other locations. 
+                                       
+                                       
+                                       <br><i><b>See Code Sample 5.</b></i>
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 4</b><span class="code"><pre>&lt;map name="LocationMap"&gt;<b>&lt;area shape="circle" coords="48,104,3" alt="San Francisco" title="1 DJ Street, San Francisco, California 94111" href="#"&gt;
+</b>
+&lt;/map&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <hr><br><a name=""></a><b>Code Sample 5</b>
+                           
+                           <span class="code"><pre>&lt;area shape="circle" coords="48,104,3" alt="San Francisco" title="1 DJ Street, San Francisco, California 94111" href="#"&gt;
+<b>&lt;area shape="circle" coords="153,95,3" alt="Toronto" title="277 Linking Street, Toronto, Ontario M6A2S9" href="#"&gt;
+</b>
+<b>&lt;area shape="circle" coords="158,108,3" alt="New York" title="1177 ABC Avenue, New York, NY 10063" href="#"&gt;
+</b>
+<b>&lt;area shape="circle" coords="324,78,3" alt="London" title="1 Governor Place, London SW2Y 9IJ" href="#"&gt;
+</b>
+<b>&lt;area shape="circle" coords="335,91,3" alt="Paris" title="28 Avenue Victor Hugo, Paris 75116" href="#"&gt;
+</b>
+<b>&lt;area shape="circle" coords="391,274,3" alt="Johannesburg" title="1 Pybus Road, Johannesburg, Sandton 2196" href="#"&gt;
+</b>
+&lt;/map&gt;</pre></span></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">3.  </td>
+                                    <td width="225">Save and view the webpage.</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                        <td valign="top" width="245">
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">a.  </td>
+                                    <td>To save the locations.html,
+                                       on the <b>Toolbar</b> click <b>Save</b>.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">b.  </td>
+                                    <td>Launch the locations.html in
+                                       Firefox.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">c.  </td>
+                                    <td>Move the mouse over the defined locations
+                                       on the map and observe the information that appears.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table>
+                              <tbody>
+                                 <tr>
+                                    <td align="right" width="20" valign="top">d.  </td>
+                                    <td>Close the Firefox application and the
+                                       Notepad++ files.
+                                       
+                                       
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="botbord"><br></td>
+                     </tr>
+                     <tr>
+                        <td colspan="2" class="thickbord"><br><br><br></td>
+                     </tr>
+                  </table>
+                  <span class="big3">Lesson 1 Follow-up</span><p>In this lesson, you created advanced navigation. This
+                     knowledge will help you to design your website such that it provides a positive
+                     experience to users when they browse through the different web pages. 
+                  </p>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td align="right" width="20" valign="top">1.</td>
+                           <td><b>
+                                 <p>What type of CSS-based menus will you use
+                                    for your website? 
+                                 </p></b>
+                              <i>
+                                 <p>Answers will vary, but may include
+                                    using text based CSS menus with submenus that visually categorize related
+                                    links to help users find the necessary information easily, and using image
+                                    based CSS menus that will add to the aesthetic look of the website.
+                                 </p>
+                                 </i>
+                              
+                              
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td align="right" width="20" valign="top">2.</td>
+                           <td><b>
+                                 <p>How do you think image maps help improve
+                                    user experience? 
+                                 </p></b>
+                              <i>
+                                 <p>Answers will vary, but may include
+                                    using image maps to improve user experience by helping users to access the
+                                    required information intuitively, enhancing the visual appeal of content and
+                                    links presented in a web page, and increasing the interactivity of the content
+                                    in a web page.
+                                 </p></i>
+                              
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table><br><br><br><br><br><br><br><br><br><br><br></td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

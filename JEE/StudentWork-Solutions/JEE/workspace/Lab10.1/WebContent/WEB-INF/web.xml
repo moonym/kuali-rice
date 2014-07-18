@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+	<display-name>JavaTunes</display-name>
+	
+	<servlet>
+		<description>Servlet to execute search</description>
+		<display-name>SearchServlet</display-name>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>com.javatunes.web.SearchServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>Manages Shopping Cart</description>
+		<display-name>CartServlet</display-name>
+		<servlet-name>CartServlet</servlet-name>
+		<servlet-class>com.javatunes.web.CartServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/cart</url-pattern>
+	</servlet-mapping>
+	
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>UserDatabase</realm-name>
+	</login-config>
+
+	<security-role>
+		<description>This role includes all customers</description>
+		<role-name>tomcat</role-name>
+	</security-role>
+
+	<security-constraint>
+
+		<!-- Protect all URLS in the javatunes Web app using /* -->
+		<web-resource-collection>
+			<web-resource-name>Shopping</web-resource-name>
+			<!--  If we wanted to restrict acess to the whole Web app, we'd use a 
+			      url-pattern of /*  -->
+			<url-pattern>/cart</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+
+		<!-- Only users in Customer role can access javatunes -->
+		<auth-constraint>
+			<role-name>tomcat</role-name>
+		</auth-constraint>
+		
+	</security-constraint>
+	
+	<welcome-file-list>
+		<welcome-file>jsp/index.jsp</welcome-file>
+	</welcome-file-list>
+	
+</web-app>

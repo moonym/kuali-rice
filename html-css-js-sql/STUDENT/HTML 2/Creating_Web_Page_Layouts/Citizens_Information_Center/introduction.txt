@@ -1,8 +1,0 @@
-<h1 style="color:#045d87;  margin:0;">Our community</h1>
-<p style="color:#6a6e6f; ">
-Chermont is a large city located in the Northeast United States. It has a population of just under 2 million, its size being comparable to cities such as Houston. the city, positioned at a key point on a major river, is a hub for trade in the region. Chermont international Airport handles flights from all over the world, and also offers on-site convention space.</p>
-
-
-<h1 style="color:#045d87;  margin:0;">Youngsters Excel at the Gracer County Fair...</h1>
-<p style="color:#6a6e6f; ">
-At the County Fair held last Tuesday, a number of young people from across the county participated and walked away with prizes. Over the past year, the youngsters showing a keen interest in honing their talents sewed dresses, planned parties, raised unusual animals as pets, crafted artworks, held painting exhibitions etc. to impress the judges at the Fair with their unique skills. </p>

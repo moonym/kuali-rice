@@ -1,0 +1,11 @@
+package com.javatunes.jdbc;
+
+import java.util.Collection;
+
+import com.javatunes.util.MusicItem;
+
+public interface MusicItemDAO {
+	public MusicItem searchById(Long id);
+	public Collection<MusicItem> searchByKeyword(String keyword);
+	public void create(MusicItem item);
+}

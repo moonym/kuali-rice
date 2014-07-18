@@ -1,0 +1,45 @@
+@CHARSET "utf-8";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Gotham, Helvetica, sans-serif;
+}
+
+#map-canvas {
+	width: 100%;
+	height: 100%;
+}
+
+#openLot {
+	color: green;
+}
+
+#closedLot {
+	color: red;
+}
+
+#search-div {
+	position: absolute;
+	top: 60px;
+	right: 10px;
+	margin: 0;
+	padding: 5px;
+	z-index: 1000009;
+	background: #FFFFFF;
+	border-radius: 2.5px;
+	box-shadow: 1px 1px 10px .5px grey;
+}
+
+#search-div h3 {
+	margin: 0;
+}
+
+#lot-select {
+	width: 100%;
+}

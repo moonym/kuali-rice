@@ -1,0 +1,1 @@
+Compiled files and other things that need to go on the classpath (e.g. properties files) will go in this directory

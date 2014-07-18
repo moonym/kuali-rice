@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="javatunesDataSource" 
+	      class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		  <property name="driverClassName"
+					value="org.apache.derby.jdbc.ClientDriver"/>
+		  <property name="url"
+					value="jdbc:derby://localhost:1527/JavaTunesDB"/>
+		  <property name="username" value="guest"/>
+		  <property name="password" value="password"/>
+	</bean>
+
+	<bean id="javatunesSessionFactory" class="org.springframework.orm.hibernate3.TODO">
+	    <!-- TODO - add in dataSource property -->
+		<property name="TODO" ref="TODO"/>
+
+		<property name="mappingResources">
+			<list>
+			  <!-- TODO add in the MusicItem.hbm.xml file -->
+			  <value>TODO</value>
+			</list>
+		</property>
+		
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.DerbyDialect</prop>
+                <prop key="hibernate.connection.pool_size">1</prop>
+        		<!-- Disable the second-level cache  -->
+                <prop key="hibernate.cache.provider_class">org.hibernate.cache.NoCacheProvider</prop>
+      		    <!-- Echo all executed SQL to stdout -->
+                <prop key="hibernate.show_sql">true</prop>     
+      		    <!-- TODO - Set use of Thread local contextual sessions -->
+                <prop key="hibernate.current_session_context_class">TODO</prop>
+			</props>
+		</property>
+		
+	</bean>
+
+	<bean id="musicItemDAO" class="com.javatunes.persist.HibernateMusicItemDAO">
+		<property name="sessionFactory" ref="javatunesSessionFactory"/>
+	</bean>
+
+</beans>
